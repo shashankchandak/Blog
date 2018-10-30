@@ -122,7 +122,7 @@ public class BlogRecyclerAdapter extends RecyclerView.Adapter<BlogRecyclerAdapte
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // we can go to the next activity...
+                  
 
                 }
             });
