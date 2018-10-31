@@ -98,6 +98,7 @@ public class PostListActivity extends AppCompatActivity {
                 blogList.clear();
                 for (DataSnapshot blogSnapShot : dataSnapshot.getChildren()) {
                     Blog blog = blogSnapShot.getValue(Blog.class);
+                    if(!mUser.getUid().equals(blog.getUserid()))
                         blogList.add(blog);
                 }
                 Collections.reverse(blogList);
